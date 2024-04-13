@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:integration="http://www.springframework.org/schema/integration"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/integration
+           http://www.springframework.org/schema/integration/spring-integration-1.0.xsd">
+
+
+	<!-- this is our bean -->
+	<bean class="com.springcore.ref.B" name="bref" p:y = "8767"/>
+	
+	
+	
+	<bean class="com.springcore.ref.A" name="aref" p:x = "8" p:ob-ref = "bref"/>
+
+
+</beans>
